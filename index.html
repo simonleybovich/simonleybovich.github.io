@@ -22,6 +22,46 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          <span class="theme-toggle__track" aria-hidden="true">
+            <span class="theme-toggle__thumb" aria-hidden="true"></span>
+          </span>
+          <span class="theme-toggle__icons" aria-hidden="true">
+            <svg
+              class="theme-toggle__icon theme-toggle__icon--moon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 14.5A8.5 8.5 0 0 1 9.5 3a7 7 0 1 0 11.5 11.5Z"
+                fill="currentColor"
+              />
+            </svg>
+            <svg
+              class="theme-toggle__icon theme-toggle__icon--sun"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"
+                fill="currentColor"
+              />
+              <path
+                d="M12 2v2m0 16v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M2 12h2m16 0h2M4.22 19.78l1.42-1.42m12.72-12.72 1.42-1.42"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <span class="theme-toggle__label">Theme</span>
+        </button>
         <div class="hamburger" onclick="toggleMenu()">
           <span></span>
           <span></span>

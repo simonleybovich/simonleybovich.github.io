@@ -1,36 +1,65 @@
-# Deployment to GitHub Pages
+# Portfolio (static site)
 
-## Quick Deploy
+Single-page personal portfolio built with **vanilla HTML/CSS/JS**. Designed to be **fast**, **easy to customize**, and **simple to deploy** on GitHub Pages.
 
-1. **Create a GitHub repository** and push this code:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
-   git push -u origin main
-   ```
+## Run locally
 
-2. **Enable GitHub Pages**:
-   - Go to your repository → Settings → Pages
-   - Under "Build and deployment", select:
-     - Source: **Deploy from a branch**
-     - Branch: **main** → **/(root)**
-   - Click Save
+Quick option (no installs):
 
-3. **Your site will be live at**: `https://YOUR_USERNAME.github.io/portfolio`
+- Open `index.html` in your browser.
 
-## Customization
+Recommended option (avoids common caching/routing quirks):
+
+```bash
+npx serve .
+```
+
+Then open the URL printed in the terminal (for example `http://localhost:3000`).
+
+## Deploy to GitHub Pages
+
+### 1) Push to GitHub
+
+If you haven’t pushed this project yet:
+
+```bash
+git init
+git add .
+git commit -m "Initial portfolio"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
+git push -u origin main
+```
+
+### 2) Enable GitHub Pages
+
+- In your repo: **Settings → Pages**
+- Under **Build and deployment**:
+  - **Source**: Deploy from a branch
+  - **Branch**: `main` / `(root)`
+- Save
+
+Your site will be live at:
+
+- `https://YOUR_USERNAME.github.io/portfolio`
+
+## Quick customization
 
 Edit `index.html` to update:
-- Your name in the hero section
-- About section content
-- Skills (change the tags)
-- Projects (update project cards with your real projects)
-- Contact links (email, GitHub, LinkedIn)
 
-## Files
+- **Hero**: name, role, CTA
+- **About**: text and “Focus Areas”
+- **Skills**: tags per category
+- **Projects**: cards (currently shows “Coming Soon”)
+- **Contact**: email, GitHub, LinkedIn links
 
-- `index.html` - Main portfolio page
-- `SPEC.md` - Design specification
+Styling lives in:
+
+- `style.css` (theme, layout, responsive rules, animations)
+
+## Project structure
+
+- `index.html`: main page
+- `style.css`: styles
+- `script.js`: interactions (navbar, mobile menu, scroll animations, dynamic year)
+- `SPEC.md`: design/UI specification
